@@ -13,6 +13,6 @@ if __name__ == '__main__':
         # 提交任务到线程池中
         futures = executor.map(task, range(10))
         # 等待所有任务完成
-        # print(futures,type(futures))
+
         for future in futures:
             print(f"Task returned {future}")
